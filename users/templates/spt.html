@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load static %}
+{% load staticfiles %}
+
+{% block content %}
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">Sartre SPT</h1>
+        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Gerar Relatório </a>
+    </div>
+    <div class="row">
+        <p>PERFIL DE SONDAGEM SPT 01</p>
+        <div class="card" style="height: 1003px; width: 99%; ">
+            {{ plot | safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
